@@ -1,0 +1,90 @@
+
+body {
+background-image: linear-gradient(to bottom, #2d0b36, #000000);
+}
+
+.navbar {
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 16px auto;
+    padding: 0;
+    padding-bottom: 10px;
+    background-color: #0e0c0c;
+    color: #ffffff;
+    border-radius: 5px;
+    border-top: 8px solid #0e0c0c;
+    box-sizing: border-box;
+}
+.navbar a{
+     text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 7px 10px;
+    border-bottom: 5px ; 
+    transition: 0.3s; /
+}
+.navbar a:hover {
+    border-bottom: 3px solid #ff4500;
+}
+.image-porto img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: auto;
+    border-radius: 100%;
+    float: right;
+    width: 150px;
+    height: 150px;
+}
+.font-gede{
+    font-family: sans-serif;
+    text-shadow: 0 0 20px white;
+    display: block;
+    justify-content: space-between;
+    align-items: left;
+    margin: 0;
+    color: white;
+}
+.baris-1, .baris-2{
+    display: block;
+    font-size: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    padding: 20px 0;
+    margin-bottom: -10px;
+    margin-top: -30px;
+    animation: ketik-muncul 1s steps(10) forwards;
+
+}
+.baris-1, .baris-2 {
+    text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.baris-1 {
+    animation: ketik-muncul 2s steps(10) infinite;
+    animation-delay: 1.5s;
+}
+
+.baris-2 {
+    animation: ketik-muncul 2s steps(15) infinite;
+    animation-delay: 1.5s; 
+}
+@keyframes ketik-muncul {
+    from{width: 0;}
+    to {width: 400px;}
+}
+
+.bawah-font-gede{
+    font-family: sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: auto;
+    margin: 0;
+    color:#ffffff;
+}
